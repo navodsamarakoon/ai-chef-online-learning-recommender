@@ -1,0 +1,39 @@
+# Frontend
+node_modules/
+dist/
+dist-ssr/
+coverage/
+*.local
+*.timestamp-*-*.mjs
+
+# Build / tooling
+*.tsbuildinfo
+.eslintcache
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# IDE / OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Backend
+backend/venv/
+backend/.venv/
+backend/**/__pycache__/
+*.py[cod]
+
+# Local recommendation state
+backend/data/interactions.json
+
+# Test / generated files
+cypress/videos/
+cypress/screenshots/
+__screenshots__/

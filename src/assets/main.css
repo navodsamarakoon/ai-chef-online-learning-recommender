@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light;
+}
+
+:root.dark {
+  color-scheme: dark;
+}
+
+html {
+  background-color: #ffffff;
+}
+
+html.dark {
+  background-color: #0a0a0a;
+}
+
+body {
+  @apply bg-white text-neutral-900 transition-colors duration-200;
+}
+
+html.dark body {
+  @apply bg-neutral-950 text-neutral-100;
+}
+
+:focus-visible {
+  outline: none;
+}
+
+button,
+input,
+select,
+a {
+  @apply transition-all duration-200;
+}
+
+button:active {
+  transform: scale(0.98);
+}
